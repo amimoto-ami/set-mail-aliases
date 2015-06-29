@@ -1,6 +1,6 @@
 # Set system email address
 
-You can setup email address for cron, logwatch and others system notifications.
+You can setup email address for cron, logwatch and other system notifications.
 
 ## What's AMIMOTO
 
@@ -10,4 +10,11 @@ You can setup email address for cron, logwatch and others system notifications.
 
 ```
 curl -L https://raw.githubusercontent.com/amimoto-ami/set-mail-aliases/master/set-mail-aliases.sh | sudo bash -s <you@example.com>
+```
+
+If you got warnings like following please remove aliases from `/etc/aliases` and run `sudo newaliases`.
+
+```
+/etc/aliases: line 99: root... Warning: duplicate alias name root
+/etc/aliases: line 100: ec2-user... Warning: duplicate alias name ec2-user
 ```
