@@ -9,6 +9,6 @@ fi
 
 EMAIL=$1
 
-echo 'root: $EMAIL' >> /etc/aliases
-echo 'ec2-user: $EMAIL' >> /etc/aliases
+echo "root: $EMAIL" >> /etc/aliases
+echo "ec2-user: $EMAIL" >> /etc/aliases
 newaliases
