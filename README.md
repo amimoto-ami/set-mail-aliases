@@ -8,6 +8,14 @@ You can setup email address for cron, logwatch and other system notifications.
 
 ## How to use
 
+### SSH into your instance
+
+```
+ssh ec2-user@<ip-address>
+```
+
+### Then run the following command on your instance
+
 ```
 curl -L https://raw.githubusercontent.com/amimoto-ami/set-mail-aliases/master/set-mail-aliases.sh | sudo bash -s <you@example.com>
 ```
